@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+
+  <!-- Bootstrap & Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin="anonymous">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <form id="task-form" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-tasks"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Add a new task..." id="task" name="task">
+            </form>
+
+            <ul class="nav nav-pills justify-content-between mb-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="task-count">0 left</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="mark-all"><i class="fas fa-check-double"></i> Complete All</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="clear-completed"><i class="fas fa-trash"></i> Clear Completed</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" id="show-all">All</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="show-completed">Completed</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="show-pending">Pending</a>
+              </li>
+            </ul>
+
+            <ul class="list-group" id="task-list">
+              <p class="text-muted text-center pt-3" id="no-task">Start by adding a task to stay productive!</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootst
